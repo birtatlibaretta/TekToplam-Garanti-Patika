@@ -1,0 +1,22 @@
+class TekGireneKadar {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sayı;
+        int toplam = 0;
+
+        System.out.println("Sayı Girin: ");
+        sayı = sc.nextInt();
+
+        while (sayı >= 0) {
+            if (sayı % 2 == 0 && sayı % 4 == 0) {
+                toplam += sayı;
+            }
+
+            System.out.println("Sayı Girin: ");
+            sayı = sc.nextInt();
+        }
+
+        System.out.println("Dördün Katları OLan Sayıların Toplamı " + toplam);
+    }
+}
